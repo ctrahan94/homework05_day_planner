@@ -54,3 +54,10 @@ for (var i = 0; i < hour.length; i++) {
      $("#hour-" + hour[i]).addClass("future");
    }
  }
+
+ //Makes the save button clickable and sets the key as the hour you are in and the value is the message that you entered 
+$(".saveBtn").on("click", function () {
+  var value = $(this).siblings(".description").val();
+  var key = $(this).parent().attr("id");
+  localStorage.setItem(key, value);
+});

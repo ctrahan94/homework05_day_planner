@@ -15,3 +15,7 @@ var displayedHours = [
   "5pm",
   "6pm",
 ];
+
+//Displays the current date and time
+var currentDay = dayjs().format("dddd, MMM D YYYY");
+$("#currentDay").append(currentDay);

@@ -1,6 +1,6 @@
 //Global variables
 
-var hour = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+var hour = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
 
 var displayedHours = [
   "8am",
@@ -14,6 +14,7 @@ var displayedHours = [
   "4pm",
   "5pm",
   "6pm",
+  "7pm"
 ];
 
 //Displays the current date and time
@@ -74,3 +75,4 @@ $("#hour-15 .description").val(localStorage.getItem("hour-15"));
 $("#hour-16 .description").val(localStorage.getItem("hour-16"));
 $("#hour-17 .description").val(localStorage.getItem("hour-17"));
 $("#hour-18 .description").val(localStorage.getItem("hour-18"));
+$("#hour-19 .description").val(localStorage.getItem("hour-19"));

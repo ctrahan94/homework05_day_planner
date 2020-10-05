@@ -41,3 +41,16 @@ for (var i = 0; i < hour.length; i++) {
       .attr("class", "col-md-10 description")
       .attr("id", "memo-area")
   );
+
+   //The save button takes the 1 column on the far right of the page
+   createDiv.append($("<button class= 'col-md-1 saveBtn'>").text("save"));
+
+   //If statement that creates a grey time block for past time blocks, red time block for the present time block and green time block for future time blocks
+   if (dayjs().format("H") == hour[i]) {
+     $("#hour-" + hour[i]).addClass("present");
+   } else if (dayjs().format("H") > hour[i]) {
+     $("#hour-" + hour[i]).addClass("past");
+   } else if (dayjs().format("H") < hour[i]) {
+     $("#hour-" + hour[i]).addClass("future");
+   }
+ }
